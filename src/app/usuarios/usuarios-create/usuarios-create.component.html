@@ -1,0 +1,35 @@
+<h1 class="text-center p-3 ">Novo Usuário</h1>
+<form [formGroup]="formulario" class="needs-validation"(ngSubmit)="cadastrarFormulario() ">
+    <div class="mb-3">
+        <label for="nome" class="form-label">Usuário</label>
+        <input type="nome" class="form-control" id="nome" formControlName="nome">
+        
+        
+    </div>
+
+    <div class="mb-3">
+        <label for="email" class="form-label">Email</label>
+        <input type="email" class="form-control" id="email" formControlName="email">
+
+    </div>
+
+    <div class="mb-3">
+        <label for="senha" class="form-label">Senha</label>
+        <input type="password" class="form-control" id="senha" formControlName="senha">
+    </div>
+
+    <label for="tipo" class="form-label">Tipo</label>
+
+    <div class="  mb-3">
+        <mat-form-field >
+            <mat-select class="" id="tipo" formControlName="categoria">
+                <mat-option value="admin">Admin</mat-option>
+                <mat-option value="operacional">Operacional</mat-option>
+            </mat-select>
+        </mat-form-field>
+    </div>
+    <button type="submit" class="btn btn-lg btn-primary">Cadastrar</button>
+    <button type="button" class="btn btn-lg btn-primary ml-4" routerLink="/usuarios">Cancelar</button>
+</form>
+
+

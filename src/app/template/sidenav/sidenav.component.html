@@ -1,0 +1,55 @@
+<mat-sidenav-container class="mat-container ">
+    <mat-sidenav class="sidenav  border h-100" mode="side" opened
+    fixedInViewport="true">
+        <mat-nav-list class="nav-list d-flex flex-column 
+         h-100">
+        <div>
+            <a mat-list-item routerLink="dashboard">
+                <i class="material-icons ">
+                    dashboard
+                </i>
+                <div class="d-none d-lg-block">
+                    Dashboard
+                </div>
+            </a>
+        </div>
+
+        <div>
+
+            <a mat-list-item routerLink="entradas">
+                <i class="material-icons">
+                    call
+                </i>
+                <div class="d-none d-lg-block">
+                    Entradas
+                </div>
+            </a>
+
+            <a mat-list-item routerLink="usuarios">
+                <i class="material-icons">
+                   account_box
+                </i>
+                <div class="d-none d-lg-block">
+                    Usuários
+                </div>
+            </a>
+
+        </div>
+        <div class="mt-auto">
+            <a mat-list-item (click)="removerAutenticacao()">
+                <i class="material-icons ">
+                    exit_to_app
+                </i>
+                <div class="d-none d-lg-block" >
+                    Sair
+                </div>
+            </a>
+        </div>
+
+        </mat-nav-list>
+    </mat-sidenav>
+<mat-sidenav-content class="content">
+    
+   <router-outlet></router-outlet>
+</mat-sidenav-content>
+</mat-sidenav-container>

@@ -1,0 +1,18 @@
+.delete a{
+    color: rgb(218, 60, 60);
+}
+.delete a :hover{
+    color: rgb(167, 60, 60);
+}
+
+.alterar a {
+    color: #3486ca;
+}
+.alterar a :hover{
+    color: #2e2b35;
+}
+
+.search
+{
+    line-height: 1.5;
+}

@@ -1,0 +1,43 @@
+<div class="input-group w-25  ml-auto ">
+    <div class="input-group-prepend ">
+      <span class="search input-group-text text-center  fas fa-search " ></span>
+    </div>
+    <input type="text" class="form-control" placeholder="Search" [(ngModel)]="filter" (keyup)="pesquisa()">
+  </div>
+
+<table class="table text-center">
+  
+    
+    <thead>
+        <tr>
+            <th>Nome</th>
+            <th>Email</th>
+            <th>Categoria</th>
+            <th>Alterar</th>
+            <th >Deletar</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let user of usuarios">
+            <td>{{user.nome}}</td>
+            <td>{{user.email}}</td>
+            <td>{{user.categoria}}</td>
+            <td class="alterar" >
+                <a [routerLink]="['alterar',user.id]">
+                <mat-icon aria-hidden="false" 
+                aria-label="Example home icon" >create
+                </mat-icon>
+                  </a>
+            </td>
+            <td class="delete ">
+                <a [routerLink]="['deletar',user.id]">
+                <mat-icon class="ml-2" aria-hidden="false" 
+                aria-label="Example home icon">delete
+                </mat-icon>
+                 </a>
+
+            </td>
+        </tr>
+    </tbody>
+</table>
+

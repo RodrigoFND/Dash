@@ -1,0 +1,6 @@
+.ng-invalid.ng-touched:not(form){
+    
+    border : 1px groove rgb(250, 37, 37);
+    
+}
+

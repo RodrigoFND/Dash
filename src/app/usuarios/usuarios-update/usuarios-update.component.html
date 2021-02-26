@@ -1,0 +1,32 @@
+<h1 class="text-center">Editar Usuário</h1>
+<form [formGroup]="usuarioForm" (ngSubmit)="atualizarForm()">
+    <div class="mb-3">
+        <label for="nome" class="form-label">Usuário</label>
+        <input type="nome" class="form-control" id="nome" formControlName="nome" disabled>
+    </div>
+
+    <div class="mb-3">
+        <label for="email" class="form-label">Email</label>
+        <input type="email" class="form-control" id="email" formControlName="email">
+
+    </div>
+
+    <div class="mb-3">
+        <label for="senha" class="form-label">Senha</label>
+        <input type="password" class="form-control" id="senha" formControlName="senha">
+    </div>
+
+    <label for="tipo" class="form-label">Tipo</label>
+
+    <div class="  mb-3">
+        <mat-form-field >
+            <mat-select class="" id="tipo" formControlName="categoria">
+                <mat-option value="admin">Admin</mat-option>
+                <mat-option value="operacional">Operacional</mat-option>
+            </mat-select>
+        </mat-form-field>
+    </div>
+    <button type="submit" class="btn btn-lg btn-warning">Alterar</button>
+    <button type="button" class="btn btn-lg btn-primary ml-4" routerLink="/usuarios">Cancelar</button>
+    
+</form>

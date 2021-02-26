@@ -1,0 +1,36 @@
+.lgbody
+{
+  background-image: url("/assets/mountain.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.lgrow{
+  background-color: rgba(18, 34, 47, 0.835);
+  color: white;
+  padding: 25px;
+  width: 400px;
+  height: 500px;
+  font-size: 20px;
+ 
+
+}
+
+.logo{
+  font-size: 180px;
+  color: rgb(1, 73, 131);
+
+  
+}
+
+button
+{
+  background-color: rgb(1, 73, 131);
+  color: white;
+  width: 200px;
+}
+
+
+
+

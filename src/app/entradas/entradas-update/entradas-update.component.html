@@ -1,0 +1,52 @@
+
+<form [formGroup]="formulario" (ngSubmit)="enviarFormulario()">
+    <div  class="mb-3">
+        <select class="form-control" formControlName="status_info">
+            <option value="novo" disabled >Novo</option>
+            <option value="iniciado">Iniciado</option>
+            <option value="cancelado">Cancelar</option>
+            <option value="agendado">Agendar</option>
+            <option value="pendente">Pendente</option>
+            <option value="concluida">Concluida</option>
+        </select>
+    </div>
+
+    
+
+    <mat-form-field  appearance="fill" class="full-width w-100">
+        <mat-label>Telephone</mat-label>
+        
+        <input type="tel" matInput formControlName="phone" placeholder="062985743987">
+        
+      </mat-form-field>
+      <br>
+
+    <mat-form-field appearance="fill" class="w-100">
+        
+        
+        <mat-label>Month and Year</mat-label>
+        <input matInput [matDatepicker]="dp" formControlName="scheduling">
+        <mat-datepicker-toggle matSuffix [for]="dp"></mat-datepicker-toggle>
+        <mat-datepicker #dp
+                        startView="multi-year"
+                        yearSelected
+                        monthSelected
+                        panelClass="example-month-picker">
+        </mat-datepicker>  
+      </mat-form-field>
+
+
+    <div>
+        <textarea class="form-control"formControlName="obs" 
+        placeholder="Leave a comment here" 
+        id="floatingTextarea2" style="height: 100px">
+        </textarea>  
+      </div>
+
+      <button  type="submit" class="btn btn-lg btn-success mr-3">Salvar</button>
+     
+      <button type="button" class="btn btn-lg btn-primary " routerLink="/entradas">Cancelar</button>
+    
+
+</form>
+

@@ -1,0 +1,32 @@
+
+.sidenav{
+    background-color: #3f51b5;
+    width: 280px;
+    overflow: hidden;
+
+}
+
+
+.mat-container a 
+{
+    color: white;
+}
+
+
+.mat-container a i
+{
+    margin-right: 20px;
+}
+
+
+
+
+
+@media screen and (max-width: 991px)
+{
+    .sidenav
+    {
+        width: 60px;
+    }
+    
+}
